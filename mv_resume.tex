@@ -1,6 +1,17 @@
 \documentclass{article}
 
+\usepackage[a4paper, total={6.5in, 11in}]{geometry}
+\usepackage{titlesec}
+\usepackage{titling}
 
+\titleformat{\section}{}{}{0in}{}[\titlerule]
+\titleformat{\subsection}{\Large}{}{0in}{}
+\titleformat{\subsubsection}{\large}{}{0in}{}
+
+\titlespacing{\subsubsection}{0.5cm}{0cm}{.5cm}
+
+\renewcommand{\maketitle}
+{\noindent\Huge\bfseries\theauthor}
 
 \begin{document}
 \title{Resume}
@@ -8,23 +19,21 @@
 
 \maketitle
 
-\section{ProjectsX}
+\section{Projects}
 
 \subsection{Embroidery WebShop}
-\subsubsection{C, \.NET, postgres}
+\subsubsection{C, .NET, postgres}
 \subsubsection{Nov 2016 - Jan 2017}
 
 \section{Education}
-
 \subsection{XV. gymnasium}
 \subsubsection{Math gymnasium}
 \subsubsection{2011 - 2015}
 
 \subsection{Faculty of Computing science}
-\subsection{2015-present}
+\subsubsection{2015-present}
 
 \section{Technical skills}
-
 \subsection{Programming languages}
 \subsubsection{C, python, c++}
 \subsection{Languages}
