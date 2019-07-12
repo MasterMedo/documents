@@ -4,40 +4,82 @@
 \usepackage{titlesec}
 \usepackage{titling}
 
-\titleformat{\section}{}{}{0in}{}[\titlerule]
-\titleformat{\subsection}{\Large}{}{0in}{}
-\titleformat{\subsubsection}{\large}{}{0in}{}
+\titleformat{\section}{\Large}{}{0in}{}[\titlerule]
+\titleformat{\subsection}{\large\bfseries}{}{0in}{}
+\titleformat{\subsubsection}{\normalsize}{}{0in}{}
 
-\titlespacing{\subsubsection}{0.5cm}{0cm}{.5cm}
-
-\renewcommand{\maketitle}
-{\noindent\Huge\bfseries\theauthor}
+\titlespacing{\subsection}{0cm}{0cm}{0cm}
+\titlespacing{\subsubsection}{0cm}{0cm}{0.5cm}
 
 \begin{document}
 \title{Resume}
-\author{Mislav Vuletic}
+\author{Mislav Vuletić}
 
-\maketitle
+\noindent\Huge\bfseries\theauthor\mdseries\large
 
-\section{Projects}
+\hfill
 
-\subsection{Embroidery WebShop}
-\subsubsection{C, .NET, postgres}
-\subsubsection{Nov 2016 - Jan 2017}
+\hfill
 
-\section{Education}
-\subsection{XV. gymnasium}
-\subsubsection{Math gymnasium}
-\subsubsection{2011 - 2015}
+\noindent
+Ulica Ante Jakšića 18 \hfill mislav.vuletic@gmail.com
 
-\subsection{Faculty of Computing science}
-\subsubsection{2015-present}
+\noindent
+10000 Zagreb \hfill 00385989866039
 
-\section{Technical skills}
-\subsection{Programming languages}
-\subsubsection{C, python, c++}
+\noindent
+Croatia \hfill github.com/MasterMedo
+
+\hfill
+
+\section{EDUCATION}
+
+\subsection{MSc in Computer Science 3/4 \hfill feb 2019 - jul 2020}
+\subsubsection{University of Zagreb, Faculty of Electrical Engineering and Computing, Croatia \hfill (expected)}
+
+\subsection{MSc in Computer Science 1/4 \hfill sep 2018 - feb 2019}
+\subsubsection{Poznan University of Technology, Faculty of Computing, Poland}
+
+\subsection{BSc in Computer Science \hfill sep 2015 - jul 2018}
+\subsubsection{University of Zagreb, Faculty of Electrical Engineering and Computing, Croatia}
+
+\subsection{Highschool Math Graduate \hfill sep 2011 - jun 2015}
+\subsubsection{XV. gymnasium, Zagreb, Croatia}
+
+\section{PROJECTS AND WORK EXPERIENCE}
+
+\subsection{Bank Integration Layer \hfill mar 2019 - present}
+\subsubsection{designed a unified, global (1 for 6 banks), bank web api that should replace existing local api's
+\\implemented most calculations for retail clients}
+
+\subsection{Advent of Code \hfill dec 2017 - present}
+\subsubsection{advent calendar: series of math/programming puzzles
+\\solved numerous puzzles}
+
+\subsection{Bots for well known games}
+\subsubsection{built a brute force paralelised bot for connect4 \hfill mar 2019
+\\
+built a bfs, dfs, A*, logic based, reinforcement learning bots for pacman \hfill may 2018
+\\
+finished 4th on a code quest three lane strategy game bot building tournament \hfill jun 2017
+\\
+built a limited depth first search chess bot \hfill sep 2017}
+
+\section{TECHNICAL SKILLS}
 \subsection{Languages}
-\subsubsection{Primary: Croatian, Secondary: English(~C1/C2), Third: German(~B2)}
+\subsubsection{Croatian: native, English: fluent (C1/C2), German: intermediate (B1/B2)}
+
+\subsection{Programming languages}
+\subsubsection{python: native, C\#: fluent, Java: intermediate, c++: made a compiler for it}
+
+\section{INTERESTS}
+\subsection{Sports}
+\subsubsection{Skiing 4*5days/year, Cycling: 2*50km/week, Running 2*10km/week, Wrestling my dog...}
+
+\subsection{Hobies}
+\subsubsection{Typing: just shy of 100wpm (average)
+\\Programming: day to day scripts
+\\Puzzle solving: the biggest puzzle being todays food menu
+\\Writing: articles, poems, life chapters, code documentation, the usual}
 
 \end{document}
-
