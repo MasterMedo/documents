@@ -3,67 +3,112 @@
 \usepackage[a4paper, total={6.5in, 11in}]{geometry}
 \usepackage{titlesec}
 \usepackage{titling}
+\usepackage{fontawesome}
+\usepackage{utopia}
+\usepackage{hyperref}
+\usepackage{graphicx}
 
 \titleformat{\section}{\Large}{}{0in}{}[\titlerule]
 \titleformat{\subsection}{\large\bfseries}{}{0in}{}
 \titleformat{\subsubsection}{\normalsize}{}{0in}{}
 
-\titlespacing{\subsection}{0cm}{0cm}{0cm}
+\titlespacing{\subsection}{0cm}{0.2cm}{0cm}
 \titlespacing{\subsubsection}{0cm}{0cm}{0.5cm}
+
+\input{glyphtounicode}
+\pdfgentounicode=1
+\pagestyle{empty}
+\renewcommand{\labelitemi}{::==}
+\setlength\parindent{0pt}
+\newenvironment{goalfont}{\fontfamily{uncl}\selectfont}{\par}
+% TODO remove page number
 
 \begin{document}
 \title{Resume}
 \author{Mislav Vuletić}
 
-\noindent \Huge\bfseries\theauthor\mdseries\large
+\Huge\bfseries\theauthor\
 
-\noindent Ulica Ante Jakšića 18 \hfill email: mislav.vuletic@gmail.com
-\\\noindent 10000 Zagreb \hfill phone number: 00385989866039
-\\\noindent Croatia \hfill linkedin.com/in/MasterMedo
-\\\-\ \hfill github.com/MasterMedo
+\mdseries\large
+
+Ulica Ante Jakšića 18 \hfill mislav.vuletic@gmail.com\\
+10000 Zagreb                    \hfill \faicon{phone} (+385) 98 9866 039\\
+Croatia                         \hfill \faicon{linkedin}/MasterMedo\\
+\-                              \hfill \faicon{github}/MasterMedo
+
+\normalsize
+
+\begin{center}
+        \begin{goalfont}
+        --- goal ---
+        \end{goalfont}
+        ``Be surrounded by conscientious people''
+\end{center}
 
 \section{EDUCATION}
-\subsection{Master's degree, Computer Science \hfill Feb 2019 --- Jul 2020}
-\subsubsection{University of Zagreb, Faculty of Electrical Engineering and Computing, Croatia
-  \\Poznan University of Technology, Faculty of Computing, Poland (Erasmus)}
-\subsection{Bachelor's degree, Computer Science \hfill Sep 2015 --- Jul 2018}
-\subsubsection{University of Zagreb, Faculty of Electrical Engineering and Computing, Croatia}
-\subsection{Highschool Math Graduate \hfill Sep 2011 --- Jun 2015}
-\subsubsection{XV.\ gymnasium (MIOC), Zagreb, Croatia}
+\subsection{Master's degree, Computer Science \hfill Feb 2019 --- July 2020}
+University of Zagreb, Faculty of Electrical Engineering and Computing, Croatia\\
+Poznań University of Technology, Faculty of Computing, Poland (Student Exchange)
+
+\subsection{Bachelor's degree, Computer Science \hfill Sept 2015 --- July 2018}
+University of Zagreb, Faculty of Electrical Engineering and Computing, Croatia
+
+% \subsection{High school mathematics graduate \hfill Sept 2011 --- June 2015}
+% XV.\ gymnasium (MIOC), Zagreb, Croatia
 
 \section{WORK EXPERIENCE}
-\subsection{Software Engineer at Addiko Bank d.d. \hfill Feb 2019 --- Sep 2019}
-\subsubsection{Designed and developed a unified integration layer (middleware) by transforming
-  \\\-\ \quad local client data from multiple bank cores to a global interface in form of a
-  \\\-\ \quad REST API using ASP.NET Core
-  \\Implemented calculations made on retail client's data for an automated
-  \\\-\ \quad loan approval system e.g.\ behavioral data, exposure, dpd, monthly debt history}
+\subsection{Software Engineer at Addiko Bank d.d. \hfill Feb 2019 --- Sept 2019}
+\begin{itemize}
+        \itemsep0em
+        \item designed and developed an {\bfseries Object Relational Model system},
+        \\a translator between objects, JSON files and relational databases
+        \item {\bfseries mentored} a team of two
+        \item built a {\bfseries REST API} using \textit{C\#}'s library \textit{ASP.NET Core} and \textit{swagger}
+        \item implemented calculations on retail clients' data for an automated loan approval system
+\end{itemize}
 
-\section{RELEVANT PERSONAL PROJECTS\hfill featured on github}
-\subsection{Advent of Code \hfill Dec 2017 --- present}
-\subsubsection{Implemented numerous solutions to mathematical and programming problems
-  \\\-\ \quad by teaching myself advanced algorithms and data structures}
-\subsection{Analyzing daily expenses \hfill Sep 2018 --- present}
-\subsubsection{Processed daily expenses using python, pandas and sklearn
-  \\Created insightful infographics and tried to predict future expenses}
-% \subsection{Bots for well-known games}
-% \subsubsection{built a brute force parallelised bot for connect4 \hfill mar 2019
-%   \\built multiple space search, logic based and reinforcement learning bots for pacman \hfill may 2018
-%   \\finished 4th on a code quest three lane strategy game bot building tournament \hfill Jun 2017
-%   \\built a limited depth first search chess bot \hfill sep 2017}
+\section{RELEVANT PERSONAL PROJECTS\hfill featured on \faicon{github}GitHub}
+\subsection{Advent of Code\hfill Dec 2015 --- present}
+\begin{itemize}
+        \itemsep0em
+        \item am one of 400 people in the world that holds all gold stars
+\end{itemize}
+
+\subsection{Analysing daily expenses \hfill Sept 2018 --- present}
+\begin{itemize}
+        \itemsep0em
+        \item processed daily expenses using \textit{python}; \textit{numpy} and \textit{pandas}
+        \item created insightful infographics with \textit{pyplot}
+        \item tried to predict future expenses using {\bfseries regression analysis} with \textit{scikit-learn}
+\end{itemize}
 
 \section{TECHNICAL SKILLS}
-Used and taught myself python on a weekly basis since 2014\\
-Switched to Arch Linux operating system in 2016 and never looked back\\
-Found a happy home in the vim editor in 2017\\
-Reached the speed of 100 wpm (words per minute) by learning to touch type\\
+\subsection{Python}
+\begin{itemize}
+        \itemsep0em
+        \item built an {\bfseries Artificial Intelligence} agent for DotA 2
+        \item built a {\bfseries REST API} using \textit{flask}, \textit{sqlalchemy}, \textit{marshmallow}, \textit{restx}
+        \item built numerous terminal applications and games with \textit{blessed}
+        \item solved more than 500 competitive programming tasks and puzzles
+\end{itemize}
+
+\subsection{C\# and Java}
+\begin{itemize}
+        \itemsep0em
+        \item built several backend {\bfseries REST APIs}, with {\bfseries OAuth 2} security
+        \item built mock applications e.g.\ handful of parsers, a graph plotter, a ray casting renderer
+\end{itemize}
+
+\subsection{other: SQL, C, html, css, MongoDB, AWS, React}
 
 \section{ABOUT ME}
-I'm an extroverted and curious individual in search of conscientious people.
-I enjoy improving, optimizing and creating.
-My daily activities include running, exercising, tutoring math and programming to several students, cooking and a bit of problem solving or coding.
-My side hobbies include building vocabulary, reading, writing, and playing board games.
+I spend most of my time in {\bfseries Neovim} and {\bfseries Arch Linux} problem solving and programming.
+My daily activities include programming, tutoring mathematics and coding to several students and running.
 I tend to thrive under pressure, as tight deadlines make me more diligent.
 Compared to peers I can be rash in the heat of the moment.
-When faced with a hard problem my brain tries to reformulate the question in a better-known domain which often wastes time, but certainly is amusing.
+I belive in kindness and transparency.
+% \mbox{} \vfill
+% \begin{center}
+%         {\footnotesize \LaTeX{}}
+% \end{center}
 \end{document}
