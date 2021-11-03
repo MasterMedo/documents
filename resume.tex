@@ -7,6 +7,7 @@
 \usepackage{utopia}
 \usepackage{hyperref}
 \usepackage{graphicx}
+\usepackage{multicol}
 
 \titleformat{\section}{\Large}{}{0in}{}[\titlerule]
 \titleformat{\subsection}{\large\bfseries}{}{0in}{}
@@ -27,16 +28,56 @@
 \title{Resume}
 \author{Mislav Vuletić}
 
-\Huge\bfseries\theauthor\
+\begin{multicols}{2}
+  \fontsize{20}{20}\bfseries
+  \theauthor{}
 
-\mdseries\large
+  % \columnbreak
+  \fontsize{15}{15}\mdseries
+  \mbox{}\\
+  \faicon{envelope} mislav.vuletic@gmail.com\\
+  \faicon{phone} (+385) 98 9866 039\\
+  \faicon{linkedin}/MasterMedo\\
+  \faicon{github}/MasterMedo
+\end{multicols}
 
-Ulica Ante Jakšića 18 \hfill mislav.vuletic@gmail.com\\
-10000 Zagreb                    \hfill \faicon{phone} (+385) 98 9866 039\\
-Croatia                         \hfill \faicon{linkedin}/MasterMedo\\
-\-                              \hfill \faicon{github}/MasterMedo
+% Ulica Ante Jakšića 18
+% 10000 Zagreb
+% Croatia
+% \-
 
 \normalsize
+
+\section{RELEVANT WORK EXPERIENCE}
+\subsection{Lead Growth Engineer at Memgraph Ltd. \hfill Mar 2021 --- Present}
+\begin{itemize}
+  \itemsep0em
+  \item built streaming graph applications at a biweekly cadence, by identifying market gaps and pursuing opportunities, leading to 4--7\% growth in key product indicators week-over-week
+  \item set up company-wide analytics (product and marketing), by creating a number of scripts to gather data, resulting in producing tangible goals and a way to track progress, raising morale in the team
+  \item consolidated all website sub-domains to sub-directories, by utilizing the power of Cloudflare workers, leading to higher search engine rankings and improved control over the website content
+  \item reduced project duration by 50\%, by streamlining the process and improving team coordination
+  \item published product packages, by packaging, containerizing, and maintaining Docker and Python packages, resulting in wider adoption and superior ease-of-use
+  \item {\bfseries tech stack}: Memgraph, Kafka, Redis, Docker, AWS, Cloudflare, Flask, Node.js, React, Vue, Rust, Go
+\end{itemize}
+
+\subsection{Freelance Software Engineer and Programming Instructor\hfill Feb 2019 --- Mar 2021}
+\begin{itemize}
+  \itemsep0em
+  \item developed multiple APIs and increased test coverage by 70\% in three codebases, enabling improvements on long untouched code
+  \item taught algorithms and data structures, helping clients stay motivated and accomplish their goals
+  \item {\bfseries tech stack}:~.NET Core, Spring, Flask, C\#, Java, Python
+\end{itemize}
+
+\subsection{Lead Software Engineer at Addiko Bank d.d. \hfill Feb 2019 --- Sept 2019}
+\begin{itemize}
+  \itemsep0em
+  \item created a unified API system to query data warehouses from multiple banks, by designing and developing an object relational mapper, increasing loan approval calculation precision by 5\%
+  \item mentored a team of two analyst-turned-software-engineers, by teaching them system design and software engineering principles, helping them accomplish their goals and transition successfully
+  \item {\bfseries tech stack}: C\#~.NET Core, SQL, Swagger
+  % \item designed and developed an \textit{SQL} {\bfseries ORM} and a {\bfseries REST API} using \textit{C\#~.NET Core} and \textit{swagger}
+  % \item {\bfseries mentored} a team of two
+  % \item implemented calculations on retail clients' data for an automated loan approval system
+\end{itemize}
 
 \section{EDUCATION}
 \subsection{Master's degree, Computer Science \hfill Sept 2018 --- July 2020}
@@ -46,31 +87,8 @@ Poznań University of Technology, Faculty of Computing, Poland (Student Exchange
 \subsection{Bachelor's degree, Computer Science \hfill Sept 2015 --- July 2018}
 University of Zagreb, Faculty of Electrical Engineering and Computing, Croatia
 
-\subsection{High school mathematics graduate \hfill Sept 2011 --- June 2015}
-XV.\ gymnasium (MIOC), Zagreb, Croatia
-
-\section{RELEVANT WORK EXPERIENCE}
-\subsection{Lead Growth Engineer at Memgraph Ltd. \hfill Mar 2021 --- Present}
-\begin{itemize}
-  \itemsep0em
-  \item Building streaming graph applications and the ecosystem around them at a biweekly cadence
-  \item Coordinating with a highly diverse team to stay on track with growth expectations
-\end{itemize}
-
-\subsection{Programming instructor \hfill Dec 2017 --- Present}
-\begin{itemize}
-  \itemsep0em
-  \item teaching high school and university students advanced algorithms and data structures,
-    \\and objective oriented programming in \textit{python} and \textit{C\# .NET Core}
-\end{itemize}
-
-\subsection{Software Engineer at Addiko Bank d.d. \hfill Feb 2019 --- Sept 2019}
-\begin{itemize}
-  \itemsep0em
-  \item designed and developed an \textit{SQL} {\bfseries ORM} and a {\bfseries REST API} using \textit{C\# .NET Core} and \textit{swagger}
-  % \item {\bfseries mentored} a team of two
-  \item implemented calculations on retail clients' data for an automated loan approval system
-\end{itemize}
+% \subsection{High school mathematics graduate \hfill Sept 2011 --- June 2015}
+% XV.\ gymnasium (MIOC), Zagreb, Croatia
 
 \section{RELEVANT PERSONAL PROJECTS\hfill featured on \faicon{github}GitHub}
 % \subsection{Temporal texture recognition\hfill Oct 2019 --- Dec 2019}
@@ -106,8 +124,16 @@ XV.\ gymnasium (MIOC), Zagreb, Croatia
 \subsection{Typetest\hfill Aug 2019 --- present}
 \begin{itemize}
   \itemsep0em
-  \item built an extensible terminal application for testing, analysing and improving typing speed
-  \item helped me learn to touch type and reach speeds above 110 wpm
+  \item built a terminal application for testing, analysing and improving typing speed
+  \item created and published a PyPI package, by collaborating with the open source community to create a superior product, increasing user typing speed by 10\% month-over-month
+\end{itemize}
+
+\subsection{Workout repetition counter \hfill Aug 2021 --- present}
+\begin{itemize}
+  \itemsep0em
+  \item designed and built an application for counting exercise repetitions using computer vision
+  \item formed and lead a team of software engineers, computer vision researchers, a data analyst and a personal trainer to create a minimum viable product in 48 hours
+  \item {\bfseries tech stack}: Tensorflow, OpenCV, Python, pandas, React Native
 \end{itemize}
 
 % \subsection{Analysing daily expenses \hfill Sept 2018 --- present}
@@ -118,17 +144,19 @@ XV.\ gymnasium (MIOC), Zagreb, Croatia
 %   \item tried to predict future expenses using {\bfseries regression analysis} with \textit{scikit-learn}
 % \end{itemize}
 
-\section{TECHNICAL SKILLS}
-\subsection{Strong proficiency in Python}
-\begin{itemize}
-  \itemsep0em
-  \item used in research, work, competitive programming and mentoring
-  \item used for 10 years (since 2011) on a daily basis
-  % \item built an {\bfseries Artificial Intelligence} agent for DotA 2 (tpg, ddqn, lstm)
-  % \item built several {\bfseries REST API}s using \textit{flask}, \textit{sqlalchemy}, \textit{marshmallow}, \textit{restx}, with a \textit{React} frontend
-  % \item built numerous terminal applications with \textit{blessed}
-  % \item built streaming graph applications with \textit{Kafka}, \textit{Redis}, \textit{Elasticsearch} and \textit{Memgraph}
-\end{itemize}
+% \section{TECHNICAL SKILLS}
+% languages: python (expert), c\# (proficient), java (~15 projects), react
+% technologies
+% \subsection{Strong proficiency in Python}
+% \begin{itemize}
+%   \itemsep0em
+%   \item used in research, work, competitive programming and mentoring
+%   \item used for 10 years (since 2011) on a daily basis
+%   % \item built an {\bfseries Artificial Intelligence} agent for DotA 2 (tpg, ddqn, lstm)
+%   % \item built several {\bfseries REST API}s using \textit{flask}, \textit{sqlalchemy}, \textit{marshmallow}, \textit{restx}, with a \textit{React} frontend
+%   % \item built numerous terminal applications with \textit{blessed}
+%   % \item built streaming graph applications with \textit{Kafka}, \textit{Redis}, \textit{Elasticsearch} and \textit{Memgraph}
+% \end{itemize}
 
 % \subsection{C\# and Java}
 % \begin{itemize}
@@ -148,9 +176,9 @@ XV.\ gymnasium (MIOC), Zagreb, Croatia
   \item Croz CodeQuest 2017 --- {\bfseries 3rd} and 7th place
 \end{itemize}
 
-\section{ABOUT ME}
-I am a long time {\bfseries Vim} and {\bfseries Arch Linux} enthusiast with a strong passion for problem solving.
-My interests lie in solution development.
-From inception of ideas, to execution, and ultimately customer satisfaction.
-I enjoy working in teams driven by success, and I pursue it until we succeed.
+% \section{ABOUT ME}
+% I am a long time {\bfseries Vim} and {\bfseries Arch Linux} enthusiast with a strong passion for problem solving.
+% My interests lie in solution development.
+% From inception of ideas, to execution, and ultimately customer satisfaction.
+% I enjoy working in teams driven by success, and I pursue it until we succeed.
 \end{document}
