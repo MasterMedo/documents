@@ -22,7 +22,6 @@
 \renewcommand{\labelitemi}{--}
 \setlength\parindent{0pt}
 \newenvironment{goalfont}{\fontfamily{uncl}\selectfont}{\par}
-% TODO remove page number
 
 \begin{document}
 \title{Resume}
@@ -41,30 +40,27 @@
   \faicon{github}/MasterMedo
 \end{multicols}
 
-% Ulica Ante Jakšića 18
-% 10000 Zagreb
-% Croatia
-% \-
-
 \normalsize
 
 \section{RELEVANT WORK EXPERIENCE}
 \subsection{Lead Growth Engineer at Memgraph Ltd. \hfill Mar 2021 --- Present}
 \begin{itemize}
   \itemsep0em
-  \item built streaming graph applications at a biweekly cadence, by identifying market gaps and pursuing opportunities, leading to 4--7\% growth in key product indicators week-over-week
-  \item set up company-wide analytics (product and marketing), by creating a number of scripts to gather data, resulting in producing tangible goals and a way to track progress
-  \item consolidated all website sub-domains to sub-directories, by utilizing the power of Cloudflare workers, leading to higher search engine rankings and improved control over the website content
+  \item developed streaming graph applications at a biweekly cadence, by leading product development, resulting in 4--7\% growth in key product indicators week-over-week
+  \item built a distributed music playlist recommendation engine, by using Memgraph, AWS, Kafka, Flask, Redis, Vue and Docker to showcase the power of PageRank and community detection algorithms
+  \item analysed the largest cryptocurrency social network, by building a parallelised website crawler and visualising a graph of 1 million nodes, helping investors make smarter decisions
+  \item set up company-wide analytics, by creating a number of scripts to gather prospective client data for multi-touch attribution, enabling the company to track users across products
   \item published internal products on official package repositories, by creating and packaging Docker images and PyPI packages, resulting in wider product adoption and superior ease-of-use
   \item {\bfseries tech stack}: Memgraph, Kafka, Redis, Python, Docker, AWS, Cloudflare, Flask, Node.js, React, Vue, Rust, Go
+  % \item consolidated all website sub-domains to sub-directories, by utilizing the power of Cloudflare workers, leading to higher search engine rankings and improved control over the website content
 \end{itemize}
 
 \subsection{Freelance Software Engineer and Programming Instructor\hfill Feb 2019 --- Mar 2021}
 \begin{itemize}
   \itemsep0em
-  \item developed multiple APIs and increased test coverage by 70\% in three codebases, enabling improvements on long untouched code
+  \item developed multiple RESTful APIs with C\#~.NET Core, Java Spring and Python Flask frameworks
+  \item wrote unit, integration and end-to-end CI/CD tests with GitHub, newman, C\# and SQL stored procedures, eliminating manual testing and deployment
   \item taught algorithms and data structures, helping clients stay motivated and accomplish their goals
-  \item {\bfseries tech stack}:~.NET Core, Spring, Flask, C\#, Java, Python
 \end{itemize}
 
 \subsection{Lead Software Engineer at Addiko Bank d.d. \hfill Feb 2019 --- Sept 2019}
@@ -76,39 +72,39 @@
 \end{itemize}
 
 \section{EDUCATION}
-\subsection{Master's degree, Computer Science \hfill Sept 2018 --- July 2020}
+\subsection{Master's degree, Computer Science \hfill Sept 2015 --- July 2020}
 University of Zagreb, Faculty of Electrical Engineering and Computing, Croatia\\
 Poznań University of Technology, Faculty of Computing, Poland (Student Exchange)
 
-\subsection{Bachelor's degree, Computer Science \hfill Sept 2015 --- July 2018}
-University of Zagreb, Faculty of Electrical Engineering and Computing, Croatia
+% \subsection{Bachelor's degree, Computer Science \hfill Sept 2015 --- July 2018}
+% University of Zagreb, Faculty of Electrical Engineering and Computing, Croatia
 
 % \subsection{High school mathematics graduate \hfill Sept 2011 --- June 2015}
 % XV.\ gymnasium (MIOC), Zagreb, Croatia
 
 \section{RELEVANT PERSONAL PROJECTS\hfill featured on \faicon{github}GitHub}
-\subsection{Ticket-tracker\hfill Dec 2020 --- present}
-\begin{itemize}
-  \itemsep0em
-  \item designed and developed a {\bfseries bug tracker} using \textit{flask-sqlalchemy-react} stack
-  \item implemented JWT authentication, url queries, data management
-  \item tags: \textit{flask, sqlalchemy, react, marshmallow, unittest, jwt, restx, migrate, typescript, hooks}
-\end{itemize}
-
-% \subsection{Workout repetition counter \hfill Aug 2021 --- present}
+% \subsection{Ticket-tracker\hfill Dec 2020 --- present}
 % \begin{itemize}
 %   \itemsep0em
-%   \item designed and built an application for counting exercise repetitions using computer vision
-%   \item formed and lead a team of software engineers, computer vision researchers, a data analyst and a personal trainer to create a minimum viable product in 48 hours
-%   \item {\bfseries tech stack}: Tensorflow, OpenCV, Python, pandas, React Native
+%   \item designed and developed a {\bfseries bug tracker} using \textit{flask-sqlalchemy-react} stack
+%   \item implemented JWT authentication, url queries, data management
+%   \item tags: \textit{flask, sqlalchemy, react, marshmallow, unittest, jwt, restx, migrate, typescript, hooks}
 % \end{itemize}
 
-\subsection{Typetest\hfill Aug 2019 --- present}
+\subsection{Workout repetition counter \hfill Aug 2021 --- present}
 \begin{itemize}
   \itemsep0em
-  \item built a terminal application for testing, analysing and improving typing speed
-  \item created and published a PyPI package, by collaborating with the open source community to create a superior product, increasing user typing speed by 10\% month-over-month
+  \item designed and built an application for counting exercise repetitions using computer vision
+  \item formed and lead a team of software engineers, computer vision researchers, a data analyst and a personal trainer to create a minimum viable product in 48 hours
+  \item {\bfseries tech stack}: Tensorflow, OpenCV, Python, pandas, React Native
 \end{itemize}
+
+% \subsection{Typetest\hfill Aug 2019 --- present}
+% \begin{itemize}
+%   \itemsep0em
+%   \item built a terminal application for testing, analysing and improving typing speed
+%   \item created and published a PyPI package, by collaborating with the open source community to create a superior product, increasing user typing speed by 10\% month-over-month
+% \end{itemize}
 
 % \subsection{AI agent for DotA 2\hfill Feb 2020 --- July 2020}
 % \begin{itemize}
@@ -133,36 +129,24 @@ University of Zagreb, Faculty of Electrical Engineering and Computing, Croatia
 %   \item researched motion detection techniques
 % \end{itemize}
 
-% \section{TECHNICAL SKILLS}
-% \subsection{Strong proficiency in Python}
-% \begin{itemize}
-%   \itemsep0em
-%   \item used in research, work, competitive programming and mentoring
-%   \item used for 10 years (since 2011) on a daily basis
-%   \item built an {\bfseries Artificial Intelligence} agent for DotA 2 (tpg, ddqn, lstm)
-%   \item built several {\bfseries REST API}s using \textit{flask}, \textit{sqlalchemy}, \textit{marshmallow}, \textit{restx}, with a \textit{React} frontend
-%   \item built numerous terminal applications with \textit{blessed}
-%   \item built streaming graph applications with \textit{Kafka}, \textit{Redis}, \textit{Elasticsearch} and \textit{Memgraph}
-% \end{itemize}
-
-% \subsection{C\# and Java}
-% \begin{itemize}
-%   \itemsep0em
-%   \item used at work and in teaching students
-  % \item built several backend {\bfseries REST APIs}, with {\bfseries OAuth 2} security
-  % \item built mock applications e.g.\ handful of parsers, a graph plotter, a ray casting renderer
-% \end{itemize}
-
-% \subsection{other: SQL, C, MongoDB, AWS}
-
-\section{COMPETITIONS}
+\section{TECHNICAL SKILLS}
 \begin{itemize}
   \itemsep0em
-  \item Advent of Code --- reached {\bfseries top 100} several times
-  \item Memgraph Hackathon 2021 --- {\bfseries 1st}, best graph algorithm
-  \item Google HashCode 2020 --- {\bfseries 1st} in cluster, top 3 in Croatia
-  \item Croz CodeQuest 2017 --- {\bfseries 3rd} and 7th place
+  \item bilingual English, limited working German language skills
+  \item proficient Python knowledge, acquired over 10 years of daily development
+  \item practical Linux experience, gathered by using Arch Linux as the primary operating system for 6 years
+  \item advanced experience with relational and graph databases, gathered through building object mappers and query builders with SQL and Cypher
+  \item product release experience, acquired through publishing and maintaining Docker Hub images, PyPI packages, and a Google Marketplace add-on
 \end{itemize}
+
+% \section{COMPETITIONS}
+% \begin{itemize}
+%   \itemsep0em
+%   \item Advent of Code --- reached {\bfseries top 100} several times
+%   \item Memgraph Hackathon 2021 --- {\bfseries 1st}, best graph algorithm
+%   \item Google HashCode 2020 --- {\bfseries 1st} in cluster, top 3 in Croatia
+%   \item Croz CodeQuest 2017 --- {\bfseries 3rd} and 7th place
+% \end{itemize}
 
 % \section{ABOUT ME}
 % I am a long time {\bfseries Vim} and {\bfseries Arch Linux} enthusiast with a strong passion for problem solving.
