@@ -35,7 +35,7 @@
   \fontsize{15}{15}\mdseries
   \mbox{}\\
   \faicon{envelope} mislav.vuletic@gmail.com\\
-  \faicon{phone} (+385) 98 9866 039\\
+  \faicon{phone} (+41) 78 25325 36\\
   \faicon{linkedin}/MasterMedo\\
   \faicon{github}/MasterMedo
 \end{multicols}
@@ -47,26 +47,35 @@
 \subsection{Software Engineer at Google \hfill Jul 2022 --- Present}
 \begin{itemize}
   \itemsep0em
-  \item Working on the platforms integration team --- Core, General (Search)
-  \item Building tools for access management and production deployments
+  \item Working on the Server Platform team; providing product teams with infrastructure, tools, and frameworks for deploying and managing services in production
+  % \item Increased the cleanup's team yearly budget, by associating the cleanup program machine resource costs with projects using them, saving \$60,000 annually % Backfilled product_id fields for all push-tool ganpati groups in Server Platform. Previously, all used resources by these groups were accounted to the Urfin team.
+  \item Migrated $\sim$30,000 servers from using code-as-config alerting configurations to a declarative format, in order to simplify logic and reliability of infrastructure automation % deprecated custom_rules.alert files in Pod in favor of gmon. Only 8% of users had customisations, so we simply deleted them for the remaining 92% of users and stopped the generation of customisations for greenfield nodes
+  % \item Eliminated a big portion of team toil introduced by filesets, by refactoring the alerting fileset, decreasing the code churn rate by 12\%
+  \item Unblocked $\sim$500 teams from not being able to submit code, by debugging and mitigating 2 medium size incidents, and prevented similar incidents from occurring in the future
+  \item Created an ETL pipeline that stores build and test time durations from libraries provided by infrastructure teams in order to quantify scalability improvements and catch regressions
+  \item Worked on increasing the scalability (memory, build time) of 70\% of Google's servers, allowing servers to double the amount of deployed services with the same footprint
+  \item Designed and built a service which alerts server owners when they're approaching scalability limits, giving them enough time to re-architecture poorly designed systems before releases for their services become blocked
+  \item Helped deliver regional load balancing support for internal and external (Google Cloud) services, allowing server owners to enforce keeping traffic within a region
+  \item {\bfseries Tech stack}: primarily Go, python-like languages, blaze, SQL, other Google specific technologies \(Monarch, AlertManager, Boq, Pod, \cdots\)
 \end{itemize}
 
-\subsection{Software Engineer at Snowfall Ltd. \hfill Jan 2022 --- Jul 2022}
+\subsection{Software Engineer at Snowfall Ltd.\ \hfill Jan 2022 --- Jul 2022}
 \begin{itemize}
   \itemsep0em
-  \item Developed a distributed microservice API for scheduling and booking multimodal journeys by combining offerings from railway, ferry and airline providers
-  \item Followed best practices of JSON:API, conventional commits, trunk based development, CI/CD, build system, tracing, logging
+  \item Developed a distributed microservice API for scheduling and booking multimodal journeys by combining offerings from railway, ferry, and airline providers
+  \item Designed a system for caching and storing schedules and price information from travel providers to reduce latency and increase reliability of the booking API
+  % \item Followed best practices of JSON:API, conventional commits, trunk based development, CI/CD, build system, tracing, logging
   \item {\bfseries Tech stack}: Python, Go, Pants, Starlette (FastAPI), Nomad, docker, pydantic
 \end{itemize}
 
-\subsection{Software Engineer at Memgraph Ltd. \hfill Mar 2021 --- Jan 2022}
+\subsection{Software Engineer at Memgraph Ltd.\ \hfill Mar 2021 --- Jan 2022}
 \begin{itemize}
   \itemsep0em
-  \item Created an Object Graph Mapper (OGM) python library, enabling schema validation, using multiple databases and testability of Graph Databases
+  \item Created an Object Graph Mapper (OGM) python library like \textit{sqlalchemy}, enabling schema validation, using multiple databases and testability of Graph Databases
   \item Developed streaming graph applications at a biweekly cadence, by leading product development, resulting in 4--7\% growth in key product indicators week-over-week
-  \item Consolidated all website sub-domains to sub-directories, by utilizing the power of Cloudflare workers, leading to higher search engine rankings and improved control over the website content
-  \item Published internal products on official package repositories, by creating and packaging Docker images and PyPI packages, resulting in wider product adoption and superior ease-of-use
-  \item {\bfseries Tech stack}: Memgraph, Kafka, Redis, Python, Docker, AWS, Cloudflare, Flask, Node.js, React, Vue, Rust, Go
+  \item Consolidated all website sub-domains to sub-directories, with Cloudflare workers, leading to higher search engine rankings and improved control over the website content delivery
+  \item Published internal products on official package repositories, by creating and packaging Docker images and PyPI packages, resulting in wider product adoption and improved ease-of-use
+  % \item {\bfseries Tech stack}: Memgraph, Kafka, Redis, Python, Docker, AWS, Cloudflare, Flask, Node.js, React, Vue, Rust, Go
   % \item Built a distributed music playlist recommendation engine, by using Memgraph, AWS, Kafka, Flask, Redis, Vue and Docker to showcase the power of PageRank and community detection algorithms
   % \item Analysed the largest cryptocurrency social network, by building a parallelised website crawler and visualising a graph of 1 million nodes, helping investors make smarter decisions
   % \item Set up company-wide analytics, by creating a number of scripts to gather prospective client data for multi-touch attribution, enabling the company to track users across products
@@ -78,37 +87,38 @@
 \begin{itemize}
   \itemsep0em
   \item Developed a proof of concept tennis club website with Java Spring and React
-  \item Wrote unit, integration and end-to-end CI/CD tests with GitHub, newman, C\# and SQL stored procedures
+  \item Wrote unit, integration, and end-to-end CI/CD tests with GitHub, newman, C\# and SQL stored procedures
   \item Taught Python, C\#~.NET Core, and algorithms to 3 engineering students
 \end{itemize}
 
-\subsection{Software Engineer at Addiko Bank d.d. \hfill Feb 2019 --- Sept 2019}
+\subsection{Software Engineer at Addiko Bank d.d.\ \hfill Feb 2019 --- Sept 2019}
 \begin{itemize}
   \itemsep0em
   \item Created a unified API system to query data warehouses from multiple banks, by designing and developing an object relational mapper, increasing loan approval calculation precision by 5\%
-  \item Mentored a team of two analyst-turned-software-engineers, by teaching them system design and software engineering principles, helping them accomplish their goals and transition successfully
-  \item {\bfseries Tech stack}: C\#~.NET Core, SQL, Swagger (OpenApi)
+  \item Mentored a team of two analyst-turned-software-engineers, by teaching them system design and software engineering principles, helping them transition successfully
+  % \item {\bfseries Tech stack}: C\#~.NET Core, SQL, Swagger (OpenApi)
 \end{itemize}
 
 \section{EDUCATION}
-\subsection{Master's degree, Computer Science \hfill Sept 2018 --- July 2020}
+\subsection{Master's degree, Computer Science}
+% \hfill Sept 2018 --- July 2020
 University of Zagreb, Faculty of Electrical Engineering and Computing, Croatia\\
 Poznań University of Technology, Faculty of Computing, Poland (Student Exchange)
 
-\subsection{Bachelor's degree, Computer Science \hfill Sept 2015 --- July 2018}
-University of Zagreb, Faculty of Electrical Engineering and Computing, Croatia
+% \subsection{Bachelor's degree, Computer Science \hfill Sept 2015 --- July 2018}
+% University of Zagreb, Faculty of Electrical Engineering and Computing, Croatia
 
 % \subsection{High school mathematics graduate \hfill Sept 2011 --- June 2015}
 % XV.\ gymnasium (MIOC), Zagreb, Croatia
 
-\section{RELEVANT PERSONAL PROJECTS\hfill featured on \faicon{github}GitHub}
-\subsection{Ticket-tracker\hfill Dec 2020 --- present}
-\begin{itemize}
-  \itemsep0em
-  \item designed and developed a {\bfseries bug tracker} using \textit{flask-sqlalchemy-react} stack
-  \item implemented JWT authentication, url queries, data management
-  \item tags: \textit{flask, sqlalchemy, react, marshmallow, unittest, jwt, restx, migrate, typescript, hooks, openAPI}
-\end{itemize}
+% \section{RELEVANT PERSONAL PROJECTS\hfill featured on \faicon{github}GitHub}
+% \subsection{Ticket-tracker\hfill Dec 2020 --- present}
+% \begin{itemize}
+%   \itemsep0em
+%   \item designed and developed a {\bfseries bug tracker} using \textit{flask-sqlalchemy-react} stack
+%   \item implemented JWT authentication, url queries, data management
+%   \item tags: \textit{flask, sqlalchemy, react, marshmallow, unittest, jwt, restx, migrate, typescript, hooks, openAPI}
+% \end{itemize}
 
 % \subsection{Workout repetition counter \hfill Aug 2021 --- present}
 % \begin{itemize}
