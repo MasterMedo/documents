@@ -48,14 +48,13 @@
 \begin{itemize}
   \itemsep0em
   \item Working on the Server Platform team; providing product teams with infrastructure, tools, and frameworks for deploying and managing services in production
-  % \item Increased the cleanup's team yearly budget, by associating the cleanup program machine resource costs with projects using them, saving \$60,000 annually % Backfilled product_id fields for all push-tool ganpati groups in Server Platform. Previously, all used resources by these groups were accounted to the Urfin team.
-  \item Migrated $\sim$30,000 servers from using code-as-config alerting configurations to a declarative format, in order to simplify logic and reliability of infrastructure automation % deprecated custom_rules.alert files in Pod in favor of gmon. Only 8% of users had customisations, so we simply deleted them for the remaining 92% of users and stopped the generation of customisations for greenfield nodes
+  % \item Increased the cleanup's team yearly resource budget by \$60,000, by billing the cleanup resource costs with projects using them instead of the cleanup team incurring the costs
+  \item Migrated $\sim$30,000 servers from code-as-config alerting configurations to declarative formats, simplifying infrastructure automation and increasing system reliability % deprecated custom_rules.alert files in Pod in favor of gmon. Only 8% of users had customisations, so we simply deleted them for the remaining 92% of users and stopped the generation of customisations for greenfield nodes
   % \item Eliminated a big portion of team toil introduced by filesets, by refactoring the alerting fileset, decreasing the code churn rate by 12\%
-  \item Unblocked $\sim$500 teams from not being able to submit code, by debugging and mitigating 2 medium size incidents, and prevented similar incidents from occurring in the future
-  \item Created an ETL pipeline that stores build and test time durations from libraries provided by infrastructure teams in order to quantify scalability improvements and catch regressions
-  \item Worked on increasing the scalability (memory, build time) of 70\% of Google's servers, allowing servers to double the amount of deployed services with the same footprint
-  \item Designed and built a service which alerts server owners when they're approaching scalability limits, giving them enough time to re-architecture poorly designed systems before releases for their services become blocked
-  \item Helped deliver regional load balancing support for internal and external (Google Cloud) services, allowing server owners to enforce keeping traffic within a region
+  \item Unblocked $\sim$500 teams from not being able to release their products, by debugging and mitigating 2 medium size incidents, and prevented similar incidents from going unnoticed by introducing relevant alerts
+  \item Built an ETL pipeline tracking build/test times for infrastructure libraries, identifying performance regressions and driving scalability improvements
+  \item Designed and implemented an alerting service that makes server owners aware when they're approaching scalability limits, giving them enough time to re-architecture poorly designed systems before releases for their services become blocked
+  \item Contributed to regional load balancing for internal and external (Google Cloud) services, enabling geographic traffic isolation
   \item {\bfseries Tech stack}: primarily Go, python-like languages, blaze, SQL, other Google specific technologies \(Monarch, AlertManager, Boq, Pod, \cdots\)
 \end{itemize}
 
